@@ -393,6 +393,13 @@ Class
 	</cfloop>
 	</dl>
 	</cfif>
+	
+	<cfif StructKeyExists(local.func, "return") AND local.func.return neq "">
+		<dl>
+			<dt><b>Returns:</b></dt>
+			<dd>#local.func.return#</dd>
+		</dl>
+	</cfif>
 
 	</dd>
 	</dl>
